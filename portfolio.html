@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <style>
+        *{
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+        .navbar{
+            height: 7vh;
+            width:100vw;
+            background-color: black;
+            position: fixed;
+            border-style: solid;
+            border-color: white;
+            border-radius: 7px;
+        }
+        .box2{
+            height: 4.5vh;
+            width: 8vw;
+            background-color: black;
+            border-radius: 20px;
+            float: right;
+            margin-right: 2vw;
+            margin-top: 1vh;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .box2:hover{
+            height: 5vh;
+            width: 8vw;
+            background-color: black;
+        }
+        .box3{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+
+        }
+        .box3_1{
+            height: 55vh;
+            width: 30vw;
+            background: black;
+            padding-left: 20vw ;
+            padding-top: 30vh;
+        }
+        .box3_para{
+            font-size: 30px;
+            color: white;
+            
+
+        }
+        .box3_para2{
+            font-size: 25px;
+        }
+        .box3_2{
+            height: 85vh;
+            width: 20vw;
+            background-color: black;
+        }
+        .img{
+            height: 50vh;
+            width: 20vw;
+            margin-top: 27vh;
+            margin-left: 5vw;
+
+        }
+        .box4{
+            
+            height: 150vh;
+            width: 100vw;
+            background-color: black;
+    
+        }
+        .box4_1{
+            height: 7vh;
+            width:70vw;
+            margin-bottom: 10vh;
+            background-color: black;
+            margin-left: 15vw;
+            border-radius: 30px;
+            border: 2px solid white;
+        }
+        .box4_1_1{
+            height: 7vh;
+            width: 40vw;
+            background-color: whitesmoke;
+            border-radius: 30px;
+        }
+        .box4_1_2{
+            height: 7vh;
+            width: 30vw;
+            background-color: whitesmoke;
+            border-radius: 30px;
+        }
+        .box4_1_3{
+            height: 7vh;
+            width: 50vw;
+            background-color: whitesmoke;
+            border-radius: 30px;
+        }
+        .box4_1_4{
+            height: 7vh;
+            width: 65vw;
+            background-color:whitesmoke;
+            border-radius: 30px;
+
+        }
+        .skill{
+            height: 20vh;
+            width: 50vw;
+            color: white;
+            padding:  0px 0px;
+            font-size: 50px;
+            font-style: oblique;
+            text-align: center;
+        }
+        .skill1{
+            padding-left: 3vw;
+            font-size: 20px;
+            color: white;
+        }
+        .skill2{
+            padding-left: 3vw;
+            font-size: 20px;
+            color: white;
+        }
+        .skill3{
+            padding-left: 3vw;
+            font-size: 20px;
+            color: white;
+        }
+        .skill4{
+            padding-left: 3vw;
+            font-size: 20px;
+            color: white;
+        }
+
+        .box7{
+            height: 8vh;
+            width: 100vw;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 7px;
+        }
+        .contact{
+            margin-left: 0.5vw;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+            margin-top: 12vh;
+        }
+        
+         
+         .fa-linkedin{
+            background:black;
+            color: white;
+            text-decoration: none;
+            margin-left:45vw;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            text-align: center;
+            
+         }
+         .fa-instagram{
+            background:black;
+            color: white;
+            text-decoration: none;
+            margin-left:1.5vw;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            text-align: center;
+            
+         }
+         .fa-phone{
+            background:black;
+            color: white;
+            margin-left:0.5vw;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            text-align: center;
+            margin-top: 3vh;
+            text-decoration: none;
+         }
+         .fa-github{
+            background:black;
+            color: white;
+            margin-left:1.5vw;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            text-align: center;
+            text-decoration: none;
+         }
+         .num{
+            margin-left: 3vw;
+            margin-top: -5vh;
+            color: white;
+            
+         }
+        .fa-envelope{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 20px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            text-align: center;
+            margin-top: 2.5vh;
+            margin-left:  0.5vw;
+            text-decoration: none;
+        }
+        .mail{
+            margin-left: 3vw;
+            margin-top: -5vh;
+            color: white;
+        }
+        .fa-whatsapp{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            text-align: center;
+            margin-top: 2.5vh;
+            margin-left:  0.5vw;
+            text-decoration: none;
+           
+        }
+        
+        
+        .fa-home{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            margin-top: 2vh;
+            margin-left:3vw;
+            text-decoration: none;
+        }
+        .fa-pencil{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            margin-top: 2vh;
+            margin-left:3vw;
+            text-decoration: none;
+        }
+        
+        .fa-user-plus{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            margin-top: 2vh;
+            margin-left:3vw;
+            text-decoration: none;
+        }
+        
+        .fa-child{
+            background:black;
+            color: white;
+            border-style:  solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            margin-top: 2vh;
+            text-decoration: none;
+            
+        }
+        .age{
+            margin-left: 2.3vw;
+            margin-top: -4.8vh;
+            font-size: 25px;
+            width: 30vw;
+            color: white;
+            font-style: inherit;
+
+        }
+        .fa-pencil-square-o{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            margin-top: 3vh;
+           text-decoration: none; 
+        }
+        .fa-map-marker{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 25px;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            margin-top: 3vh;
+            text-decoration: none;
+        }
+        .fa-desktop{
+            background:black;
+            color: white;
+            border-style: solid white;
+            font-size: 24px;
+            border-radius: 50%;
+            width: 26px;
+            height: 27px;
+            margin-top: 3vh;
+            text-decoration: none;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+    <a href="#home" class="fa fa-home"></a>
+    <a href="#skills" class="fa fa-pencil"></a>
+    <a href="#contacts" class="fa fa-user-plus"></a>
+    
+
+
+    </div>
+    <div id="home" class="box3">
+        <div class="box3_1">
+            <p class="box3_para"> Hello!! Hardik Udit here</p>
+            <a  class="fa fa-child"></a>
+            <p class="age" >- 18 year</p>
+            <a  class="fa fa-pencil-square-o"></a>
+            <p class="age"> - Btech(CS)</p>
+            <a  class="fa fa-desktop" >    </a>
+            <p class="age">- Web Developer</p>
+            <a  class="fa fa-map-marker"></a>
+            <p class="age"> - Jaipur</p>
+
+
+
+            
+            
+        </div>
+        <div class="box3_2">
+            <img class="img" src="./Untitled.png">
+        </div>
+    </div>
+
+    <div id="skills" class="box4">
+        <p class="skill">Skills </p>
+        <p class="skill1">Problem Solving</p>
+        <div class="box4_1">
+           
+            <div class="box4_1_1">
+            </div>
+        </div>
+        <p class="skill2">DSA</p>
+        <div class="box4_1">
+            
+            <div class="box4_1_2">
+            </div>
+        </div>
+        <p class="skill3">HTML/CSS</p>
+        <div class="box4_1">
+            
+            <div class="box4_1_3">
+
+            </div>
+        </div>
+        <p class="skill4">C Programming</p>
+        <div class="box4_1">
+            
+            <div class="box4_1_4">
+
+            </div>
+        </div>
+  
+    
+    
+    
+        
+            <p class="contact">Contacts:</p>
+            <a  class="fa fa-phone"></a>
+            <h2 class="num">9521243923</h2>
+            <a  class="fa fa-envelope"></a>
+            <h3 class="mail">hardikudit2003@gmail.com</h2>
+            <a  class="fa fa-whatsapp"></a>
+            <h2 class="num">9521243923</h2>
+
+            
+              
+
+    </div>
+    
+
+        <div id="contacts" class="box7">
+            
+            <a href="https://www.linkedin.com/in/hardik-udit-903106292" class="fa fa-linkedin"></a>
+            <a href="https://instagram.com/hardik_udit?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" class="fa fa-instagram"></a>
+            <a href="" class="fa fa-github"></a>
+       
+        </div>
+
+
+
+    
+
+</body>
+</html>
